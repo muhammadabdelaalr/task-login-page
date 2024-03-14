@@ -1,0 +1,165 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.login {
+  display: flex;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .login-left {
+    width: 50%;
+    height: 100vh;
+    .box-login {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .titles {
+        h1 {
+          font-weight: 700;
+          font-size: 30px;
+        }
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .form-group {
+          position: relative;
+          width: 364px;
+          height: 52px;
+          input {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            background-color: #F0EDFFCC;
+            outline: none;
+            border: none;
+            padding: 12px 40px;
+          }
+          .icon {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+          }
+        }
+        button {
+          width: 124px;
+          height: 52px;
+          border: none;
+          border-radius: 16px;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 18px;
+          letter-spacing: 0em;
+          color: #fff;
+          background: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
+          box-shadow: 0px 8px 21px 0px #00000029;
+          cursor: pointer;
+        }
+      }
+      .social-login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        
+        p {
+          position: relative;
+          width: 100%;
+          &::after, &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 29%;
+            height: 1px;
+            background-color: #F0EDFF;
+            color: #F0EDFF;
+          }
+          &::after {
+            right: 0;
+          }
+          &::before {
+            left: 0;
+          }
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 6px;
+          width: 100%;
+          height: 52px;
+          color: #000;
+          border: 1px solid #F0EDFF;
+          border-radius: 16px;   
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .login-right {
+    width: 50%;
+    height: 100vh;
+    background-image: url('./assets/images/Rectangle.svg');
+    background-size: cover;
+    .box {
+      position: relative;
+      width: 412px;
+      height: 524px;
+      border-radius: 46px;   
+      background-color: rgb(145 129 244 / .5);
+      border: 1px solid #FFFFFF85;
+      .title {
+        position: absolute;
+        top: 26px;
+        left: 26px;
+        max-width: 184px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+
+      }
+      .img {
+        position: absolute;
+        bottom: -7px;
+        right: -108px;
+      }
+      .icon {
+        position: absolute;
+        display: flex;
+        bottom: 20%;
+        left: -38px;
+        padding: 18px;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+    }
+  }
+}
