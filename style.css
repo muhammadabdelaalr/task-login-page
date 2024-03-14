@@ -56,7 +56,7 @@ body {
             display: flex;
             position: absolute;
             top: 50%;
-            left: 15px;
+            inset-inline-start: 15px;
             transform: translateY(-50%);
           }
         }
@@ -97,10 +97,10 @@ body {
             color: #F0EDFF;
           }
           &::after {
-            right: 0;
+            inset-inline-end: 0;
           }
           &::before {
-            left: 0;
+            inset-inline-start: 0;
           }
         }
         a {
@@ -136,7 +136,7 @@ body {
       .title {
         position: absolute;
         top: 26px;
-        left: 26px;
+        inset-inline-start: 26px;
         max-width: 184px;
         font-size: 21px;
         font-weight: 700;
@@ -149,13 +149,13 @@ body {
       .img {
         position: absolute;
         bottom: -7px;
-        right: -108px;
+        inset-inline-end: -108px;
       }
       .icon {
         position: absolute;
         display: flex;
         bottom: 20%;
-        left: -38px;
+        inset-inline-start: -38px;
         padding: 18px;
         border-radius: 50%;
         background-color: #fff;
