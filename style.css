@@ -163,3 +163,15 @@ body {
     }
   }
 }
+
+/* media query */
+@media (max-width: 1250px) {
+  .login {
+    .login-left {
+      width: 100%;
+    }
+    .login-right {
+      display: none;
+    }
+  }
+}
